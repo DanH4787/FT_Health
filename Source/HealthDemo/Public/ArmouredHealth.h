@@ -24,3 +24,4 @@ class HEALTHDEMO_API UArmouredHealth : public UHealth
 		// notice i have to say this is an override
 		void TakeDamage(int Damage) override;
 };
+ 
