@@ -28,9 +28,10 @@ void UHealth::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponen
 void UHealth::TakeDamage(int Damage)
 {
 	HP -= Damage;
+	UE_LOG(LogTemp, Warning, TEXT("I am hit %d"), HP);
 	if (HP < 0)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("I am hit"));
+		
 		HP = 0;
 		// Tell interested classes we have died, as we are polite 
 		Died.Broadcast();

@@ -11,10 +11,14 @@
  * You will need add some variables 
  * Give it a go
  */
+
+
 UCLASS()
 class HEALTHDEMO_API UArmouredHealth : public UHealth
 {
 	GENERATED_BODY()
+	
+	int Armoured_Health = 100;
 	
 	public:
 		// notice i have to say this is an override
